@@ -16,7 +16,7 @@ public class Alunos extends Pessoas {
     public double getAltura(){
         return altura;
     }
-@Override
+
 public String toString(){
   return "Aluno" + "\n" +
           "Nome:" + nome+ "\n" +
