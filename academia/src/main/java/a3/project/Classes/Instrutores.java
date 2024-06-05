@@ -1,6 +1,6 @@
 package a3.project.Classes;
 
-public class Intrutores extends Pessoas {
+public class Instrutores extends Pessoas {
 
     private String matricula;
     
