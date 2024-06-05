@@ -11,7 +11,7 @@ public class Intrutores extends Pessoas {
     public String getMatricula(){
         return matricula;
     }
-
+@override
     public String toString(){
         return "Instrutor:" + "/n"+
         "Nome:" + nome + "/n" +
