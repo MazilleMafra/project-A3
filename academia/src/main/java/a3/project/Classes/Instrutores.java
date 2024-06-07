@@ -11,15 +11,14 @@ public class Instrutores extends Pessoas {
     public String getMatricula(){
         return matricula;
     }
-@override
+@Override
     public String toString(){
-        return "Instrutor:" + "/n"+
-        "Nome:" + nome + "/n" +
-        "Data de Nascimento:" + dataDeNascimento + "/n" +
-        "CPF:" + cpf + "/n" +
-        "Senha:" + senha + "/n" +
-        "Peso:" + peso + "/n" +
-        "Altura:" + altura + "/n";
+        return "Instrutor: " + "/n"+
+        "Nome: " + nome + "/n" +
+        "Data de Nascimento: " + dataDeNascimento + "/n" +
+        "CPF: " + cpf + "/n" +
+        "Senha: " + senha + "/n" +
+        "Matricula: " + matricula + "/n";
                 
     }
     

@@ -1,26 +1,27 @@
-package classes;
+package a3.project.Classes;
 
 public class Alunos extends Pessoas {
-    private double peso;
-    private double altura;
-    public void setPeso (double peso){
+    private String peso;
+    private String altura;
+
+    public void setPeso (String peso){
         this.peso = peso;
     }
-    public double getPeso(){
+    public String getPeso(){
         return peso;
     }
     
-    public void setAltura (double altura){
+    public void setAltura (String altura){
         this.altura = altura;
     }
-    public double getAltura(){
+    public String getAltura(){
         return altura;
     }
-@override
+@Override
 public String toString(){
   return "Aluno" + "\n" +
           "Nome:" + nome+ "\n" +
-          "DataDeNascimento:" + DataDeNascimento+ "\n" +
+          "DataDeNascimento:" + dataDeNascimento+ "\n" +
           "Cpf:" + cpf+"\n" +
           "Senha:" + senha+"\n" +
           "peso:" + peso+"\n" +
