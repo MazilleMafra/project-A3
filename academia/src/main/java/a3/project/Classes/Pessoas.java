@@ -5,9 +5,15 @@ public class Pessoas {
     protected String dataDeNascimento;
     protected String cpf;
     protected String senha;
-    protected String peso;
-    protected String altura;
+    
 
+    public Pessoas(String nome, String dataDeNascimento, String cpf, String senha) {
+        this.nome = nome;
+        this.dataDeNascimento = dataDeNascimento;
+        this.cpf = cpf;
+        this.senha = senha;
+    }
+    
     public void setNome(String nome){
         this.nome = nome;
     }
@@ -32,18 +38,8 @@ public class Pessoas {
     public String getSenha(){
         return senha;
     }
-    public void setPeso(String peso){
-        this.peso = peso;
-    }
-    public String getPeso(){
-        return peso;
-    }
-    public void setAltura(String altura){
-        this.altura = altura; 
-    }
-    public String getAltura(){
-        return altura;
-    }
+
+    
     
 }
 
