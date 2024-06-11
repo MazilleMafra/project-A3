@@ -1,31 +1,50 @@
 package a3.project.Classes;
 
 public class Alunos extends Pessoas {
-    private String peso;
-    private String altura;
+    private double peso;
+    private double altura;
 
-    public void setPeso (String peso){
+    public Alunos(String nome, String dataDeNascimento, String cpf, String senha, double peso, double altura) {
+        super(nome, dataDeNascimento, cpf, senha);
         this.peso = peso;
-    }
-    public String getPeso(){
-        return peso;
-    }
-    
-    public void setAltura (String altura){
         this.altura = altura;
     }
-    public String getAltura(){
-        return altura;
-    }
-@Override
-public String toString(){
-  return "Aluno" + "\n" +
-          "Nome:" + nome+ "\n" +
-          "DataDeNascimento:" + dataDeNascimento+ "\n" +
-          "Cpf:" + cpf+"\n" +
-          "Senha:" + senha+"\n" +
-          "peso:" + peso+"\n" +
-          "altura:" + altura+"\n" ;       
+
+    public void setPeso(double peso) {
+        this.peso = peso;
     }
 
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public double calcularIMC() {
+        if (altura > 0) {
+            return peso / (altura * altura);
+        } else {
+            return 0;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "nome='" + nome + '\'' +
+                ", dataDeNascimento='" + dataDeNascimento + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", senha='" + senha + '\'' +
+                ", peso=" + peso +
+                ", altura=" + altura +
+                '}';
+    }
 }
+
+	
