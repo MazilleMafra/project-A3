@@ -3,7 +3,12 @@ package a3.project.Classes;
 public class Instrutores extends Pessoas {
 
     private String matricula;
-    
+
+    public Instrutores(String nome, String dataDeNascimento, String cpf, String senha, String matricula) {
+        super(nome, dataDeNascimento, cpf, senha);
+        this.matricula = matricula;
+    }
+           
 
     public void setMatricula(String matricula){
         this.matricula = matricula;
