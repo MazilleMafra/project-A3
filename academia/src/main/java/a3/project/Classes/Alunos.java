@@ -27,11 +27,7 @@ public class Alunos extends Pessoas {
     }
 
     public double calcularIMC() {
-        if (altura > 0) {
-            return peso / Math.sqrt(altura);
-        } else {
-            return 0;
-        }
+       return peso / (altura * altura);
     }
 
     @Override
