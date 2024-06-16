@@ -4,8 +4,8 @@ public class Alunos extends Pessoas {
     private double peso;
     private double altura;
 
-    public Alunos(String nome, String dataDeNascimento, String cpf, String senha, double peso, double altura) {
-        super(nome, dataDeNascimento, cpf, senha);
+    public Alunos(String nome, String dataDeNascimento, String cpf, String senha, double peso, double altura, String email) {
+        super(nome, dataDeNascimento, cpf, senha, email);
         this.peso = peso;
         this.altura = altura;
     }
@@ -28,7 +28,7 @@ public class Alunos extends Pessoas {
 
     public double calcularIMC() {
         if (altura > 0) {
-            return peso / (altura * altura);
+            return peso / Math.sqrt(altura);
         } else {
             return 0;
         }
@@ -37,12 +37,13 @@ public class Alunos extends Pessoas {
     @Override
     public String toString() {
         return "Aluno{" +
-                "nome='" + nome + '\'' +
-                ", dataDeNascimento='" + dataDeNascimento + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", senha='" + senha + '\'' +
-                ", peso=" + peso +
-                ", altura=" + altura +
+                "Nome = '" + nome + '\'' +
+                ", Data de Nascimento = '" + dataDeNascimento + '\'' +
+                ", CPF = '" + cpf + '\'' +
+                ", Senha = '" + senha + '\'' +
+                ", Peso = " + peso +
+                ", Altura = " + altura +
+                ", Email = " + email +
                 '}';
     }
 }

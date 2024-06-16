@@ -5,14 +5,18 @@ public class Pessoas {
     protected String dataDeNascimento;
     protected String cpf;
     protected String senha;
+    protected String email;
     
 
-    public Pessoas(String nome, String dataDeNascimento, String cpf, String senha) {
+    public Pessoas(String nome, String dataDeNascimento, String cpf, String senha, String email) {
         this.nome = nome;
         this.dataDeNascimento = dataDeNascimento;
         this.cpf = cpf;
         this.senha = senha;
+        this.email = email;
     }
+
+    
     
     public void setNome(String nome){
         this.nome = nome;
@@ -37,6 +41,12 @@ public class Pessoas {
     }
     public String getSenha(){
         return senha;
+    }
+    public void setEmail(String email){
+        this.email = email;
+    }
+    public String getEmail(){
+        return email;
     }
 
     

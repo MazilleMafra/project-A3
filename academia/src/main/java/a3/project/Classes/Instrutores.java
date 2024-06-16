@@ -4,8 +4,8 @@ public class Instrutores extends Pessoas {
 
     private String matricula;
 
-    public Instrutores(String nome, String dataDeNascimento, String cpf, String senha, String matricula) {
-        super(nome, dataDeNascimento, cpf, senha);
+    public Instrutores(String nome, String dataDeNascimento, String cpf, String senha, String matricula, String email) {
+        super(nome, dataDeNascimento, cpf, senha, email);
         this.matricula = matricula;
     }
            
@@ -23,7 +23,8 @@ public class Instrutores extends Pessoas {
         "Data de Nascimento: " + dataDeNascimento + "/n" +
         "CPF: " + cpf + "/n" +
         "Senha: " + senha + "/n" +
-        "Matricula: " + matricula + "/n";
+        "Matricula: " + matricula + "/n" +
+        "Email: " + email + "/n";
                 
     }
     
