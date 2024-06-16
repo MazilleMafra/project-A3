@@ -6,17 +6,19 @@ import a3.project.Classes.Alunos;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); 
 
+        System.out.print("Insira o peso (kg): ");
         double peso = sc.nextDouble();
-        Alunos aluno = new Alunos(null, null, null, null, 0, 0, null);
-        
+        System.out.print("Insira a altura (m): ");
+        double altura = sc.nextDouble();
+
         sc.close();
+        
+        Alunos aluno = new Alunos (null, null, null, null, peso, altura, null);
+
+        double imc = aluno.calcularIMC();
+        System.out.printf("IMC do aluno: %.2f", imc);
     }
     
-
-
-    public static String nomeCompleto(String primeiroNome, String segundoNome){
-        return primeiroNome.concat(" ").concat(segundoNome);
-    }
 }
